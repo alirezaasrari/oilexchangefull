@@ -1,0 +1,75 @@
+<div class="container mt-3">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <p class="navbar-brand">تعویض روغن : {{ storename$ | async }}</p>
+      <button
+        style="background-color: #fcd535"
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-around">
+          <li class="nav-item mb-1">
+            <button (click)="setView1()" [class.opacity-50]="showcomponent1" [attr.data-bs-toggle]="dataToggle()" data-bs-target="#navbarSupportedContent">
+              مدیریت مشتری ها
+            </button>
+          </li>
+          <li class="nav-item mb-1">
+            <button (click)="setView2()" [class.opacity-50]="showcomponent2" [attr.data-bs-toggle]="dataToggle()" data-bs-target="#navbarSupportedContent">
+              مدیریت انبار
+            </button>
+          </li>
+          <li class="nav-item mb-1">
+            <button (click)="setView3()" [class.opacity-50]="showcomponent3" [attr.data-bs-toggle]="dataToggle()" data-bs-target="#navbarSupportedContent" >
+              بررسی دقیق تر کسب و کار
+            </button>
+          </li>
+          <li class="nav-item mb-1">
+            <button (click)="setView4()" [class.opacity-50]="showcomponent4" [attr.data-bs-toggle]="dataToggle()" data-bs-target="#navbarSupportedContent">
+              تبلیغات
+            </button>
+          </li>
+        </ul>
+
+        <div style="display: flex; flex-grow: 1; justify-content: center">
+          <button class="exit-button"  (click)="clear()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="56"
+              height="56"
+              fill="currentColor"
+              class="bi bi-power"
+              viewBox="0 0 16 16"
+            >
+              <path d="M7.5 1v7h1V1h-1z" />
+              <path
+                d="M3 8.812a4.999 4.999 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="p-3 mt-2" id="content">
+    <div *ngIf="showcomponent1">
+      <app-customer-management></app-customer-management>
+    </div>
+    <div *ngIf="showcomponent4">
+      <app-promote-management></app-promote-management>
+    </div>
+    <div *ngIf="showcomponent3">
+      <app-analize-management></app-analize-management>
+    </div>
+    <div *ngIf="showcomponent2" >
+      <app-store-management></app-store-management>
+    </div>
+  </div>
+</div>

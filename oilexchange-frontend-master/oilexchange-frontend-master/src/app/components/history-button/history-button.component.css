@@ -1,0 +1,16 @@
+.btn-history{
+    background-color: white;
+    border-radius: 25px;
+    box-sizing: border-box;
+    border: solid 4px royalblue;
+    color: royalblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-weight: bolder;
+}
+.btn-history:hover{
+    background-color: royalblue;
+    color: white;
+}

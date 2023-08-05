@@ -1,0 +1,185 @@
+.card{
+    border-radius: 25px;
+    border: solid 4px royalblue;
+    background-color: #fef3c4;
+}
+
+.carrd{
+    border: solid 4px royalblue;
+    border-radius: 25px;
+    background-color: white;
+}
+
+#ServiceName {
+ font-size: small;
+ font-weight: bold;
+ white-space: nowrap;
+}
+
+/* modal css */
+
+.add-button{
+    background-color: #fef3c4;
+    border: none;
+}
+.add-button:hover{
+    background-color: #fef3c4;
+    border: solid 4px royalblue;
+    opacity: 0.7;
+}
+.card{
+    border-radius: 25px;
+    border: solid 4px royalblue;
+    background-color: #fef3c4;
+}
+
+.history-card-style{
+    border: solid 4px royalblue;
+    border-radius: 25px;
+    background-color: white;
+}
+
+#ServiceName {
+ font-size: small;
+ font-weight: bold;
+ white-space: nowrap;
+}
+#input-text1{
+    width: 100%;
+    border: 0px;
+ 
+}
+#input-text2{
+    width: 100%;
+    border: 0px;
+ 
+}
+#input-text3{
+    width: 100%;
+    border: 0px;
+ 
+}
+#input-text4{
+    width: 100%;
+    border: 0px;
+ 
+}
+#input-text5{
+    width: 100%;
+    border: 0px;
+ 
+}
+#input-text6{
+    width: 100%;
+    border: 0px;
+ 
+}
+#input-text7{
+    width: 100%;
+    border: 0px;
+ 
+}
+#input-text8{
+    width: 100%;
+    border: 0px;
+ 
+}
+#input-text9{
+    width: 100%;
+    border: 0px;
+ 
+}
+#input-text10{
+    width: 100%;
+    border: 0px;
+ 
+}
+#input-text11{
+    width: 100%;
+    border: 0px;
+ 
+}
+
+/* plaque css */
+
+.plaque-container{
+    border: solid 4px royalblue;
+    box-sizing: border-box;
+    border-radius: 25px;
+    width: 100%;
+    background-color: #fef3c4;
+}
+.fs-4{
+    color: royalblue;
+    font-weight: bolder;
+    border-bottom: solid 4px royalblue;
+    padding-bottom: 20px;
+    width: 80%;
+}
+.form-select{
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 65px;   
+    color: royalblue;
+    border: solid 2px royalblue;
+    font-weight: bold;
+    background-color: #fef3c4;
+    background-image: none;
+    border-radius: 10px;
+}
+
+#alpha{
+    text-align: center;
+}
+
+
+#width-input1{
+    width: 20px;
+    background-color: #fef3c4;
+    border: none;
+    text-align: center;
+}
+#width-input2{
+    width: 20px;
+    background-color: #fef3c4;
+    border: none;
+    text-align: center;
+}
+#width-input3{
+    width: 20px;
+    background-color: #fef3c4;
+    border: none;
+    text-align: center;
+}
+#width-input4{
+    width: 20px;
+    background-color: #fef3c4;
+    border: none;
+    text-align: center;
+}
+#width-input5{
+    width: 20px;
+    background-color: #fef3c4;
+    border: none;
+    text-align: center;
+}
+#width-input6{
+    width: 20px;
+    background-color: #fef3c4;
+    border: none;
+    text-align: center;
+}
+#width-input7{
+    width: 20px;
+    background-color: #fef3c4;
+    border: none;
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;}
+.card-info-size{
+    white-space: wrap!important; 
+}

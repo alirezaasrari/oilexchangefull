@@ -1,0 +1,15 @@
+.form-select{
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 65px;   
+    color: royalblue;
+    border: solid 2px royalblue;
+    font-weight: bold;
+    background-color: #fef3c4;
+    background-image: none;
+    border-radius: 10px;
+}
+
+option{
+    text-align: center;
+}

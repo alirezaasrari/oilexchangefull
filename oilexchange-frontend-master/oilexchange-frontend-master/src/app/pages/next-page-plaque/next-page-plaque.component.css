@@ -1,0 +1,123 @@
+.card {
+  border-radius: 25px;
+  border: solid 4px royalblue;
+  background-color: #fef3c4;
+}
+
+.carrd {
+  border: solid 4px royalblue;
+  border-radius: 25px;
+  background-color: white;
+}
+
+#ServiceName {
+  font-size: small;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* modal css */
+
+.add-button {
+  background-color: #fef3c4;
+  border: none;
+}
+.add-button:hover {
+  background-color: #fef3c4;
+  border: solid 4px royalblue;
+  opacity: 0.7;
+}
+.card {
+  border-radius: 25px;
+  border: solid 4px royalblue;
+  background-color: #fef3c4;
+}
+
+.history-card-style {
+  border: solid 4px royalblue;
+  border-radius: 25px;
+  background-color: white;
+}
+
+#ServiceName {
+  font-size: small;
+  font-weight: bold;
+  white-space: nowrap;
+}
+#input-text {
+  width: 100%;
+  border: 0px;
+}
+
+/* plaque css */
+
+.plaque-container {
+  border: solid 4px royalblue;
+  box-sizing: border-box;
+  border-radius: 25px;
+  width: 100%;
+  background-color: #fef3c4;
+}
+.fs-4 {
+  color: royalblue;
+  font-weight: bolder;
+  border-bottom: solid 4px royalblue;
+  padding-bottom: 20px;
+  width: 80%;
+}
+.form-select {
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 65px;
+  color: royalblue;
+  border: solid 2px royalblue;
+  font-weight: bold;
+  background-color: #fef3c4;
+  background-image: none;
+  border-radius: 10px;
+}
+
+#alpha {
+  text-align: center;
+}
+
+#width-input {
+  width: 20px;
+  background-color: #fef3c4;
+  border: none;
+  text-align: center;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#id {
+  background-color: royalblue;
+  color: white;
+  border-radius: 15px;
+  font-weight: bolder;
+  border: solid 4px royalblue;
+  width: 100px;
+  height: 30px;
+}
+#id:hover {
+  background-color: white;
+  color: royalblue;
+  border-radius: 15px;
+  font-weight: bolder;
+  border: solid 4px royalblue;
+  width: 100px;
+  height: 30px;
+}
+#input-id {
+  background-color: #fef3c4;
+  border: none;
+  border-radius: 15px;
+  font-weight: bolder;
+  height: 35px;
+  width: 145px;
+}
+.card-info {
+  white-space: wrap !important;
+}

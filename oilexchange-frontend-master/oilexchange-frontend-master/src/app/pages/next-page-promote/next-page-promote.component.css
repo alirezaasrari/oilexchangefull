@@ -1,0 +1,17 @@
+img {
+  border: solid 4px royalblue;
+  border-radius: 30px;
+}
+.promoted-text {
+  background-color: #fef3c4;
+  height: 100%;
+  width: 100%;
+  border: solid 4px royalblue;
+  border-radius: 30px;
+  padding: 40px;
+  font-weight: bolder;
+
+}
+.text{
+  line-height: 49px;
+}

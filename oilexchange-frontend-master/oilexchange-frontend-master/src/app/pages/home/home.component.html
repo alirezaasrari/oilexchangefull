@@ -1,0 +1,125 @@
+<div>
+    <app-carousel></app-carousel>
+  </div>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 mt-2 mb-2">
+        <app-login-button></app-login-button>
+      </div>
+      <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 mt-2 mb-2">
+        <div class="container plaque-container">
+          <div class="row">
+            <div class="col-2 d-flex align-items-center justify-content-center">
+              <div>
+                <div class="pe-2"><p class="fs-3 text-center">ایران</p></div>
+                <div class="row">
+                  <div style="padding-right: 20px" class="col-6 mb-2">
+                    <input
+                      id="width-input1"
+                      class="d-flex justify-content-center"
+                      type="string"
+                      maxlength="1"
+                      placeholder="____"
+                      [(ngModel)]="plaquenumber[7]"
+                    />
+                  </div>
+                  <div class="col-6" style="padding: 0px">
+                    <input
+                      id="width-input2"
+                      class="d-flex justify-content-center"
+                      type="string"
+                      maxlength="1"
+                      placeholder="____"
+                      [(ngModel)]="plaquenumber[6]"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-2 d-flex align-items-center justify-content-center">
+              <div class="row">
+                <div class="col-4" style="padding: 0px">
+                  <input
+                    id="width-input3"
+                    class="d-flex justify-content-center"
+                    type="string"
+                    maxlength="1"
+                    placeholder="____"
+                    [(ngModel)]="plaquenumber[5]"
+                  />
+                </div>
+                <div class="col-4" style="padding: 0px">
+                  <input
+                    id="width-input4"
+                    class="d-flex justify-content-center"
+                    type="text"
+                    maxlength="1"
+                    placeholder="____"
+                    [(ngModel)]="plaquenumber[4]"
+                  />
+                </div>
+                <div class="col-4" style="padding: 0px">
+                  <input
+                    id="width-input5"
+                    class="d-flex justify-content-center"
+                    type="text"
+                    maxlength="1"
+                    placeholder="____"
+                    [(ngModel)]="plaquenumber[3]"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-3 d-flex align-items-center justify-content-center">
+              <div>
+                <select
+                  (change)="selectAlphabetHandler($event)"
+                  class="form-select"
+                  aria-label="Default select example"
+                  name="plaque"
+                >
+                  <option *ngFor="let alphabet of alphaBets" >{{ alphabet }}</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-2 d-flex align-items-center justify-content-center">
+              <div class="row">
+                <div class="col-6" style="padding: 0px">
+                  <input
+                    id="width-input6"
+                    class="d-flex justify-content-center"
+                    type="text"
+                    maxlength="1"
+                    placeholder="____"
+                    [(ngModel)]="plaquenumber[1]"
+                  />
+                </div>
+                <div class="col-6" style="padding: 0px">
+                  <input
+                    id="width-input7"
+                    class="d-flex justify-content-center"
+                    type="text"
+                    maxlength="1"
+                    placeholder="____"
+                    [(ngModel)]="plaquenumber[0]"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-3 d-flex align-items-center justify-content-center">
+              <div>
+                <button  class="row btn-history" (click)="onSearch()">
+                  مشاهده سوابق
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+  <div class="container mt-5">
+    <app-footer></app-footer>
+  </div>

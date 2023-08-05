@@ -1,0 +1,19 @@
+button{
+    border: solid 4px royalblue;
+    border-radius: 25px;
+    background-color: royalblue;
+    color: white;
+    opacity: 90%;
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+button:hover{
+    border: solid 4px royalblue;
+    border-radius: 25px;
+    background-color: white;
+    color: royalblue;
+    opacity: 90%;
+    width: 200px;
+    margin-bottom: 30px;
+}

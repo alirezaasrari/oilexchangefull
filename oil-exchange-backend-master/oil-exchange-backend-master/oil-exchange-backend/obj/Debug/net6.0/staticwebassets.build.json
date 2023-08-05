@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "uYz3uuxaE4YfEDChMMhCJATRrjVP7bkhKZ4dSR+yk4c=",
+  "Source": "oil-exchange-backend",
+  "BasePath": "_content/oil-exchange-backend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

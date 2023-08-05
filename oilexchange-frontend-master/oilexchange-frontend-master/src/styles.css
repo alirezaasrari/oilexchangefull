@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+/* @font-face {
+    font-family: 'IRANSans';
+    src: url(assets/fonts/IRANSansWebKE.ttf) format('trueType');
+} */
+body{
+    background-color: #fcd535;
+    /* font-family: "IRANSans", "Helvetica Neue", sans-serif; */
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.mat-mdc-snack-bar-container {
+    &.red-snackbar {
+      --mdc-snackbar-container-color: red;
+      --mat-mdc-snack-bar-button-color: #fff;
+      --mdc-snackbar-supporting-text-color: #fff;
+    }
+  }
+.mat-mdc-snack-bar-container {
+    &.green-snackbar {
+      --mdc-snackbar-container-color: rgb(119, 197, 18);
+      --mat-mdc-snack-bar-button-color: #fff;
+      --mdc-snackbar-supporting-text-color: #fff;
+    }
+  }

@@ -1,0 +1,210 @@
+/* .login-container{
+    border: solid 4px royalblue;
+    border-radius: 25px;
+    background-color: #fef3c4;
+    padding-top: 20px;
+    max-width: 500px;
+}
+
+label{
+    color: royalblue;
+    font-weight: bolder;
+    left: unset;
+}
+input{
+    border-radius: 25px;
+}
+
+.login-input{
+    border: none;
+    background-color:#fef3c4;
+}
+
+.login-input-text{
+    font-weight: bolder;
+    color: royalblue;
+    font-size: 20px;
+}
+
+.login-to-crm{
+    background-color: white;
+    border: solid 4px royalblue;
+    color: royalblue;
+    font-weight: bolder;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-to-crm:hover{
+    background-color: royalblue;
+    border: solid 4px white;
+    font-weight: bolder;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border-seperator{
+    border-left: solid 1px #c6bf9d;
+}
+
+.return{
+    background-color: royalblue;
+    color: white;
+    border-radius: 25px;
+    font-weight: bolder;
+    border: solid 4px royalblue;
+     width: 200px;
+     height: 50px;
+}
+
+.return:hover{
+    background-color: white;
+    color: royalblue;
+    border-radius: 25px;
+    font-weight: bolder;
+    border: solid 4px white;
+     width: 200px;
+     height: 50px;
+} */
+
+.login-container{
+    border: solid 4px royalblue;
+    border-radius: 25px;
+    background-color: #fef3c4;
+    padding-top: 20px;
+    max-width: 500px;
+}
+
+label{
+    color: royalblue;
+    font-weight: bolder;
+    left: unset;
+}
+input{
+    border-radius: 25px;
+}
+
+.login-input{
+    border: none;
+    background-color:#fef3c4;
+}
+
+.login-input-text{
+    font-weight: bolder;
+    color: royalblue;
+    font-size: 20px;
+}
+
+.login-to-crm{
+    background-color: white;
+    border: solid 4px royalblue;
+    color: royalblue;
+    font-weight: bolder;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-to-crm:hover{
+    background-color: royalblue;
+    border: solid 4px white;
+    font-weight: bolder;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border-seperator{
+    border-left: solid 1px #c6bf9d;
+}
+
+.return{
+    background-color: royalblue;
+    color: white;
+    border-radius: 25px;
+    font-weight: bolder;
+    border: solid 4px royalblue;
+     width: 200px;
+     height: 50px;
+     
+}
+
+.return:hover{
+    background-color: white;
+    color: royalblue;
+    border-radius: 25px;
+    font-weight: bolder;
+    border: solid 4px white;
+     width: 200px;
+     height: 50px;
+     
+}
+.was-validated .form-control:valid {
+    background-image: none;
+  }
+  
+  
+  .was-validated .form-control:invalid {
+    background-image: none;
+  }
+  #snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: royalblue;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+  }
+  
+  #snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.1s, fadeout 0.5s 1.5s;
+    animation: fadein 0.5s, fadeout 0.5s 1.5s;
+  }
+  
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  #snackbar{
+    
+    font-weight: bolder;
+  }

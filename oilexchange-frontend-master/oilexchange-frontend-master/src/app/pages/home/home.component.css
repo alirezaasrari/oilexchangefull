@@ -1,0 +1,89 @@
+.plaque-container {
+    border: solid 4px royalblue;
+    box-sizing: border-box;
+    border-radius: 25px;
+    width: 100%;
+    background-color: #fef3c4;
+  }
+  
+  #width-input1 {
+    width: 20px;
+    background-color: #fef3c4;
+    border: none;
+    text-align: center;
+  }
+  #width-input2 {
+    width: 20px;
+    background-color: #fef3c4;
+    border: none;
+    text-align: center;
+  }
+  #width-input3 {
+    width: 20px;
+    background-color: #fef3c4;
+    border: none;
+    text-align: center;
+  }
+  #width-input4 {
+    width: 20px;
+    background-color: #fef3c4;
+    border: none;
+    text-align: center;
+  }
+  #width-input5 {
+    width: 20px;
+    background-color: #fef3c4;
+    border: none;
+    text-align: center;
+  }
+  #width-input6 {
+    width: 20px;
+    background-color: #fef3c4;
+    border: none;
+    text-align: center;
+  }
+  #width-input7 {
+    width: 20px;
+    background-color: #fef3c4;
+    border: none;
+    text-align: center;
+  }
+  .fs-3 {
+    color: royalblue;
+    font-weight: bolder;
+    border-bottom: solid 4px royalblue;
+    padding-bottom: 20px;
+    width: 80%;
+  }
+  .btn-history {
+    background-color: white;
+    border-radius: 25px;
+    box-sizing: border-box;
+    border: solid 4px royalblue;
+    color: royalblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-weight: bolder;
+  }
+  .btn-history:hover {
+    background-color: royalblue;
+    color: white;
+  }
+  .form-select {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 65px;
+    color: royalblue;
+    border: solid 2px royalblue;
+    font-weight: bold;
+    background-color: #fef3c4;
+    background-image: none;
+    border-radius: 10px;
+  }
+  
+  option {
+    text-align: center;
+  }
+  

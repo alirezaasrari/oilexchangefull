@@ -1,0 +1,50 @@
+.navbar-brand {
+  font-weight: bolder;
+  color: rgb(15, 60, 194);
+}
+
+nav {
+  border: solid 4px rgb(15, 60, 194);
+  border-radius: 25px;
+}
+
+.exit-button:hover {
+  border: solid 4px red;
+  border-radius: 25px;
+  background-color: white;
+  color: red;
+  font-weight: bolder;
+  font-size: 20px;
+ 
+}
+
+.exit-button {
+  border: solid 4px red;
+  border-radius: 25px;
+  background-color: red;
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+ul {
+  display: flex;
+  flex-grow: 4;
+}
+
+li button {
+  border: solid 4px rgb(15, 60, 194);
+  border-radius: 25px;
+  background-color: rgb(15, 60, 194);
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+  width: 150px;
+  height: 80px;
+}
+
+#content {
+  border: solid 4px rgb(15, 60, 194);
+  border-radius: 25px;
+  min-height: 500px;
+}

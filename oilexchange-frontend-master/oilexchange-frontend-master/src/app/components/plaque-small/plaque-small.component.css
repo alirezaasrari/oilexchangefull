@@ -1,0 +1,31 @@
+.plaque-container{
+    border: solid 4px royalblue;
+    box-sizing: border-box;
+    border-radius: 25px;
+    width: 100%;
+    background-color: #fef3c4;
+}
+.fs-4{
+    color: royalblue;
+    font-weight: bolder;
+    border-bottom: solid 4px royalblue;
+    padding-bottom: 20px;
+    width: 80%;
+}
+.form-select{
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 65px;   
+    color: royalblue;
+    border: solid 2px royalblue;
+    font-weight: bold;
+    background-color: #fef3c4;
+    background-image: none;
+    border-radius: 10px;
+}
+
+option{
+    text-align: center;
+}
+
+

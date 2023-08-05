@@ -1,0 +1,90 @@
+<div *ngIf="loading" class="m-5">
+  <app-loading ></app-loading>
+</div>
+<div class="container d-flex justify-content-center pt-5" *ngIf="!loading">
+  <div class="login-container">
+    <div class="container was-validated">
+      <div class="form-floating">
+        <input
+          type="text"
+          class="form-control is-valid"
+          id="floatingPassword"
+          placeholder="تلفن"
+          [(ngModel)]="registerrequest.phonenumber"
+          pattern="[0-9]{11}"
+          required
+          
+        />
+        <label for="floatingPassword1">تلفن</label>
+        <div class="invalid-feedback">شماره همراه را ثبت کنید</div>
+      </div>
+      <div class="form-floating mt-3">
+        <input
+          pattern="[a-zA-Zا-ی]*"
+          minlength="3"
+          type="text"
+          class="form-control is-valid"
+          id="floatingPassword1"
+          placeholder="نام مغازه"
+          [(ngModel)]="registerrequest.storename"
+          required
+        />
+        <label for="floatingPassword2">نام مغازه</label>
+        <small class="text-success">توجه: نام مغازه باید قبلا توسط فرد دیگری انتخاب نشده باشد</small>
+        <div class="invalid-feedback">نام مغازه رو وارد کنید</div>
+      </div>
+      <div class="form-floating mt-3">
+        <input
+          [(ngModel)]="registerrequest.pass"
+          type="password"
+          class="form-control is-valid"
+          id="floatingPassword2"
+          placeholder="رمز ورود"
+          pattern="(?=.*\d)(?=.*[a-z]).{6,}"
+          required
+         
+        />
+        <label for="floatingPassword2">رمز ورود</label>
+        <div class="invalid-feedback">رمز ورود را وارد کنید</div>
+        <div class="invalid-feedback">استفاده از یک حرف اجباریست</div>
+      </div>
+      <div class="form-floating mt-3">
+        <input
+
+          type="password"
+          class="form-control is-valid"
+          id="floatingPassword3"
+          placeholder="تکرار رمز ورود"
+          [(ngModel)]="confirmpassword"
+          pattern="(?=.*\d)(?=.*[a-z]).{6,}"
+          required
+
+        />
+
+        <label for="floatingPassword3">تکرار رمز ورود</label>
+        <div class="invalid-feedback">رمز عبور را دوباره وارد کنید</div>
+        <div
+          [class]="
+            isValid
+              ? 'd-none'
+              : 'd-block text-danger'
+          "
+        >
+          مقدار رمز وتکرار باید یکسان باشند
+        </div>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center pb-1">
+      <button
+        (click)="onRegister()"
+        class="login-to-crm mt-3"
+        type="submit"
+      >
+        ثبت نام
+      </button>
+    </div>
+  </div>
+</div>
+<div class="text-center mt-2">
+  <button routerLink="/login" class="return mb-5">بازگشتبه صفحه قبل</button>
+</div>

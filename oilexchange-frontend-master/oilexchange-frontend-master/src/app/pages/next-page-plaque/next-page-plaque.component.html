@@ -1,0 +1,223 @@
+<div class="container">
+ 
+    <div
+      class="d-flex justify-content-center align-items-center mt-5 p-5"
+      *ngIf="!show"
+    >
+    <app-loading *ngIf="loading"></app-loading>
+      <div *ngIf="!loading"
+        class="toast show align-items-center text-white bg-primary border-0"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="d-flex" >
+          <div class="toast-body">
+            پلاک وارد شده صحیح نیست یا هیچ سابقه ای برای ان در سامانه ثبت
+            نشده!!!!
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+
+  <div  *ngIf="show">
+    <app-loading *ngIf="loading"></app-loading>
+    <div *ngIf="!loading">
+     
+      <div class="row d-flex justify-content-center">
+        <span
+          class="mt-5 fw-bolder col-xxl-6 col-xl-3 col-lg-3 col-sm-12 col-xs-12"
+          >شما میتوانید کد تعویض روغنی درج شده در بالای هر کارت را وارد و نام
+          مغازه را دریافت کنید</span
+        >
+        <input
+          class="mt-5 mb-2 col-xxl-2 col-xl-3 col-lg-3 col-sm-3 col-xs-3"
+          id="input-id"
+          type="text"
+          [(ngModel)]="storId"
+        />
+        <button
+          class="d-flex justify-content-center mt-5 mx-1 col-xxl-2 col-xl-3 col-lg-3 col-sm-3 col-xs-3"
+          id="id"
+          (click)="getname(storId)"
+        >
+          جستجو
+        </button>
+        <span
+          class="mt-5 mb-2 fw-bolder col-xxl-2 col-xl-2 col-lg-2 col-sm-12 col-xs-12"
+           > تعویض روغن : {{ name$ | async }}</span
+        >
+       
+      
+    </div>
+    <div class="row">
+      <div
+        class="d-flex justify-content-center col-xxl-4 col-xl-4 col-lg-6 col-sm-12 col-xs-12"
+        *ngFor="let item of CustomerList$ | async"
+      >
+        <div class="card mt-5" style="width: 18rem">
+          <div class="card-body">
+            <p class="card-title text-center fw-bolder">
+              {{ item.servicedate.split("T")[0] }}
+            </p>
+            <p class="card-title text-center fw-bolder">
+              کد تعویض روغن: {{ item.userid }}
+            </p>
+            <!--plaque show card -->
+            <div class="container plaque-container">
+              <div class="row">
+                <!--start plaque flag-->
+                <div
+                  class="col-3 d-flex align-items-center justify-content-center"
+                >
+                  <div>
+                    <div class="pe-2">
+                      <p class="fs-5 text-center">ایران</p>
+                    </div>
+                    <div class="row">
+                      <div style="padding-right: 20px" class="col-6 mb-2">
+                        <p>{{ item.plaque[7] }}</p>
+                      </div>
+                      <div class="col-6">
+                        <p>{{ item.plaque[6] }}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-3 d-flex align-items-center justify-content-center"
+                >
+                  <div class="row">
+                    <div class="col-4" style="padding: 0px">
+                      <p>{{ item.plaque[5] }}</p>
+                    </div>
+                    <div class="col-4" style="padding: 0px">
+                      <p>{{ item.plaque[4] }}</p>
+                    </div>
+                    <div class="col-4" style="padding: 0px">
+                      <p>{{ item.plaque[3] }}</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-3 d-flex align-items-center justify-content-center"
+                >
+                  <!--alphabet selector-->
+                  <div>
+                    <p>{{ item.plaque[2] }}</p>
+                  </div>
+                </div>
+                <div
+                  class="col-3 d-flex align-items-center justify-content-center"
+                >
+                  <div class="row">
+                    <div class="col-6" style="padding: 0px">
+                      <p>{{ item.plaque[1] }}</p>
+                    </div>
+                    <div class="col-6" style="padding: 0px">
+                      <p>
+                        {{ item.plaque[0] }}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--END OF PLAQUE SHOW CARD-->
+            <div class="row d-flex justify-content-between mt-2">
+              <div class="carrd history-card-style col-6 text-center">
+                <span id="ServiceName">{{ rows[0] }}</span>
+              </div>
+              <div class="carrd history-card-style col-5 text-center">
+                <span id="ServiceName" class="card-info">{{ item.engineoil }}</span>
+              </div>
+            </div>
+            <div class="row d-flex justify-content-between mt-2">
+              <div class="carrd history-card-style col-6 text-center">
+                <span id="ServiceName">{{ rows[1] }}</span>
+              </div>
+              <div class="carrd history-card-style col-5 text-center">
+                <span id="ServiceName" class="card-info">{{ item.gearboxoil }}</span>
+              </div>
+            </div>
+            <div class="row d-flex justify-content-between mt-2">
+              <div class="carrd history-card-style col-6 text-center">
+                <span id="ServiceName">{{ rows[2] }}</span>
+              </div>
+              <div class="carrd history-card-style col-5 text-center">
+                <span id="ServiceName" class="card-info">{{ item.cabinfilter }}</span>
+              </div>
+            </div>
+            <div class="row d-flex justify-content-between mt-2">
+              <div class="carrd history-card-style col-6 text-center">
+                <span id="ServiceName">{{ rows[3] }}</span>
+              </div>
+              <div class="carrd history-card-style col-5 text-center">
+                <span id="ServiceName" class="card-info">{{ item.oilfilter }}</span>
+              </div>
+            </div>
+            <div class="row d-flex justify-content-between mt-2">
+              <div class="carrd history-card-style col-6 text-center">
+                <span id="ServiceName">{{ rows[4] }}</span>
+              </div>
+              <div class="carrd history-card-style col-5 text-center">
+                <span id="ServiceName" class="card-info">{{ item.airfilter }}</span>
+              </div>
+            </div>
+            <div class="row d-flex justify-content-between mt-2">
+              <div class="carrd history-card-style col-6 text-center">
+                <span id="ServiceName">{{ rows[5] }}</span>
+              </div>
+              <div class="carrd history-card-style col-5 text-center">
+                <span id="ServiceName" class="card-info">{{ item.petrolfilter }}</span>
+              </div>
+            </div>
+            <div class="row d-flex justify-content-between mt-2">
+              <div class="carrd history-card-style col-6 text-center">
+                <span id="ServiceName">{{ rows[6] }}</span>
+              </div>
+              <div class="carrd history-card-style col-5 text-center">
+                <span id="ServiceName" class="card-info">{{ item.breakeoil }}</span>
+              </div>
+            </div>
+            <div class="row d-flex justify-content-between mt-2">
+              <div class="carrd history-card-style col-6 text-center">
+                <span id="ServiceName">{{ rows[7] }}</span>
+              </div>
+              <div class="carrd history-card-style col-5 text-center">
+                <span id="ServiceName" class="card-info">{{ item.untifreez }}</span>
+              </div>
+            </div>
+            <div class="row d-flex justify-content-between mt-2">
+              <div class="carrd history-card-style col-6 text-center">
+                <span id="ServiceName">{{ rows[8] }}</span>
+              </div>
+              <div class="carrd history-card-style col-5 text-center">
+                <span id="ServiceName" class="card-info">{{ item.previouskilometer }}</span>
+              </div>
+            </div>
+            <div class="row d-flex justify-content-between mt-2">
+              <div class="carrd history-card-style col-6 text-center">
+                <span id="ServiceName">{{ rows[9] }}</span>
+              </div>
+              <div class="carrd history-card-style col-5 text-center">
+                <span id="ServiceName" class="card-info">{{ item.nextkilometer }}</span>
+              </div>
+            </div>
+            <div class="row d-flex justify-content-between mt-2">
+              <div class="carrd history-card-style col-6 text-center">
+                <span id="ServiceName">{{ rows[10] }}</span>
+              </div>
+              <div class="carrd history-card-style col-5 text-center">
+                <span id="ServiceName" class="card-info">{{ item.hydraulicoil }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <app-return-button></app-return-button>
+</div>

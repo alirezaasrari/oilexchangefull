@@ -1,0 +1,12 @@
+
+.history-card-style{
+    border: solid 4px royalblue;
+    border-radius: 25px;
+    background-color: white;
+}
+
+#ServiceName {
+ font-size: small;
+ font-weight: bold;
+ white-space: nowrap;
+}

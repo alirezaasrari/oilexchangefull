@@ -1,0 +1,259 @@
+<table class="table table-striped">
+  <thead>
+    <tr class="table-warning">
+      <!-- <th scope="col" class="text-center fw-bolder">شماره</th> -->
+      <th scope="col" class="text-center fw-bolder">نام</th>
+      <th scope="col" class="text-center fw-bolder">خریده شده</th>
+      <th scope="col" class="text-center fw-bolder">فروخته شده</th>
+      <!-- <th scope="col" class="text-center fw-bolder">موجودی</th> -->
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-primary">
+      <!-- <th class="text-center fw-bold" scope="row">1</th> -->
+      <th class="text-center fw-bold" scope="row">روغن موتور</th>
+      <td class="text-center fw-bold">
+        <span *ngIf="!loading1">{{ buyedengineoilnumber$ | async }}</span>
+        <app-loading *ngIf="loading1"></app-loading>
+      </td>
+      <td class="text-center fw-bold">
+        <span *ngIf="!loading2"></span>{{ selledengineoilnumber$ | async }}
+        <app-loading *ngIf="loading2"></app-loading>
+      </td>
+      <!-- <td class="text-center fw-bold">{{ engineoiltotal }}</td> -->
+    </tr>
+    <tr class="table-warning">
+      <!-- <th class="text-center fw-bold" scope="row">2</th> -->
+      <th class="text-center fw-bold" scope="row">روغن گیربکس</th>
+      <td class="text-center fw-bold">
+        <span *ngIf="!loading3"></span>{{ buyedgearboxoilnumber$ | async }}
+        <app-loading *ngIf="loading3"></app-loading>
+      </td>
+      <td class="text-center fw-bold">
+        <span *ngIf="!loading4"></span>{{ selledgearboxoilnumber$ | async }}
+        <app-loading *ngIf="loading4"></app-loading>
+      </td>
+      <!-- <td class="text-center fw-bold">{{ gearboxoiltotal }}</td> -->
+    </tr>
+    <tr class="table-primary">
+      <!-- <th class="text-center fw-bold" scope="row">3</th> -->
+      <th class="text-center fw-bold" scope="row">روغن ترمز</th>
+      <td class="text-center fw-bold">
+        <span *ngIf="!loading5">{{ buyedbreakeoilnumber$ | async }}</span>
+        <app-loading *ngIf="loading5"></app-loading>
+      </td>
+      <td class="text-center fw-bold">
+        <span *ngIf="!loading6">{{ selledbreakeoilnumber$ | async }}</span>
+        <app-loading *ngIf="loading6"></app-loading>
+      </td>
+      <!-- <td class="text-center fw-bold">{{ breakeoiltotal }}</td> -->
+    </tr>
+    <tr class="table-warning">
+      <!-- <th class="text-center fw-bold" scope="row">4</th> -->
+      <th class="text-center fw-bold" scope="row">فیلتر هوا</th>
+      <td class="text-center fw-bold">
+        <span *ngIf="!loading7">{{ buyedairfilternumber$ | async }}</span>
+        <app-loading *ngIf="loading7"></app-loading>
+      </td>
+      <td class="text-center fw-bold">
+        <span *ngIf="!loading8">{{ selledairfilternumber$ | async }}</span>
+        <app-loading *ngIf="loading8"></app-loading>
+      </td>
+      <!-- <td class="text-center fw-bold">{{ airfiltertotal }}</td> -->
+    </tr>
+    <tr class="table-primary">
+      <!-- <th class="text-center fw-bold" scope="row">5</th> -->
+      <th class="text-center fw-bold" scope="row">فیلتر کابین</th>
+      <td class="text-center fw-bold">
+        <span *ngIf="!loading9">{{ buyedcabinfilternumber$ | async }}</span>
+        <app-loading *ngIf="loading9"></app-loading>
+      </td>
+      <td class="text-center fw-bold">
+        <span *ngIf="!loading10">{{ selledcabinfilternumber$ | async }}</span>
+        <app-loading *ngIf="loading10"></app-loading>
+      </td>
+      <!-- <td class="text-center fw-bold">{{ cabinefiltertotal }}</td> -->
+    </tr>
+    <tr class="table-warning">
+      <!-- <th class="text-center fw-bold" scope="row">6</th> -->
+      <th class="text-center fw-bold" scope="row">فیلتر روغن</th>
+      <td class="text-center fw-bold">
+        <span *ngIf="!loading11">{{ buyedoilfilternumber$ | async }}</span>
+        <app-loading *ngIf="loading11"></app-loading>
+      </td>
+      <td class="text-center fw-bold">
+        <span *ngIf="!loading12">{{ selledoilfilternumber$ | async }}</span>
+        <app-loading *ngIf="loading12"></app-loading>
+      </td>
+      <!-- <td class="text-center fw-bold">{{ oilfiltertotal }}</td> -->
+    </tr>
+    <tr class="table-primary">
+      <!-- <th class="text-center fw-bold" scope="row">7</th> -->
+      <th class="text-center fw-bold" scope="row">فیلتر بنزین</th>
+      <td class="text-center fw-bold">
+        <span *ngIf="!loading13">{{ buyedpetrolfilternumber$ | async }}</span>
+        <app-loading *ngIf="loading13"></app-loading>
+      </td>
+      <td class="text-center fw-bold">
+        <span *ngIf="!loading14">{{ selledpetrolfilternumber$ | async }}</span>
+        <app-loading *ngIf="loading14"></app-loading>
+      </td>
+      <!-- <td class="text-center fw-bold">{{ petrolfiltertotal }}</td> -->
+    </tr>
+    <tr class="table-warning">
+      <!-- <th class="text-center fw-bold" scope="row">8</th> -->
+      <th class="text-center fw-bold" scope="row">ضد یخ</th>
+      <td class="text-center fw-bold">
+        <span *ngIf="!loading15">{{ buyeduntifreeznumber$ | async }}</span>
+        <app-loading *ngIf="loading15"></app-loading>
+      </td>
+      <td class="text-center fw-bold">
+        <span *ngIf="!loading16">{{ selleduntifreeznumber$ | async }}</span>
+        <app-loading *ngIf="loading16"></app-loading>
+      </td>
+      <!-- <td class="text-center fw-bold">{{ untifreeztotal }}</td> -->
+    </tr>
+
+    <tr class="table-primary">
+      <!-- <th class="text-center fw-bold" scope="row">9</th> -->
+      <th class="text-center fw-bold" scope="row">روغن هیدرولیک</th>
+      <td class="text-center fw-bold">
+        <span *ngIf="!loading17"> {{ buyedhydraulicoilnumber$ | async }}</span>
+        <app-loading *ngIf="loading17"></app-loading>
+      </td>
+      <td class="text-center fw-bold">
+        <span *ngIf="!loading18">{{ selledhydraulicoilnumber$ | async }}</span>
+        <app-loading *ngIf="loading18"></app-loading>
+      </td>
+      <!-- <td class="text-center fw-bold">{{ hydrolicoiltotal }}</td> -->
+    </tr>
+  </tbody>
+</table>
+
+<div class="d-flex justify-content-center">
+  <button
+    type="button"
+    class="add-button"
+    data-bs-toggle="modal"
+    data-bs-target="#exampleModal"
+    data-bs-whatever="@mdo"
+    class="add-store"
+  >
+    افزودن به انبار
+  </button>
+  <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <app-loading *ngIf="loading"></app-loading>
+        <div class="modal-body d-flex justify-content-center row" *ngIf="!loading">
+          <div class="card mt-5" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title text-center">افزودن به انبار</h5>
+              <!-- here we put our modal object -->
+              <div class="row d-flex justify-content-between mt-2">
+                <label for="1">{{ rows2[1] }}</label>
+                <input
+                  placeholder="تعداد"
+                  type="number"
+                  [(ngModel)]="engineoilnumber"
+                  id="1"
+                />
+                <label for="2">{{ rows2[2] }}</label>
+                <input
+                  placeholder="تعداد"
+                  type="number"
+                  [(ngModel)]="gearboxoilnumber"
+                  id="2"
+                />
+                <label for="3">{{ rows2[3] }}</label>
+                <input
+                  placeholder="تعداد"
+                  type="number"
+                  [(ngModel)]="breakeoilnumber"
+                  id="3"
+                />
+                <label for="4">{{ rows2[4] }}</label>
+                <input
+                  placeholder="تعداد"
+                  type="number"
+                  [(ngModel)]="airfilternumber"
+                  id="4"
+                />
+                <label for="5">{{ rows2[5] }}</label>
+                <input
+                  placeholder="تعداد"
+                  type="number"
+                  [(ngModel)]="cabinfilternumber"
+                  id="5"
+                />
+                <label for="6">{{ rows2[6] }}</label>
+                <input
+                  placeholder="تعداد"
+                  type="number"
+                  [(ngModel)]="oilfilternumber"
+                  id="6"
+                />
+                <label for="7">{{ rows2[7] }}</label>
+                <input
+                  placeholder="تعداد"
+                  type="number"
+                  [(ngModel)]="petrolfilternumber"
+                  id="7"
+                />
+                <label for="8">{{ rows2[8] }}</label>
+                <input
+                  placeholder="تعداد"
+                  type="number"
+                  [(ngModel)]="untifreeznumber"
+                  id="8"
+                />
+                <label for="9">{{ rows2[9] }}</label>
+                <input
+                  placeholder="تعداد"
+                  type="number"
+                  [(ngModel)]="hydraulicoilnumber"
+                  id="9"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              بستن
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+              (click)="
+                addToStore(
+                  engineoilnumber,
+                  gearboxoilnumber,
+                  breakeoilnumber,
+                  airfilternumber,
+                  cabinfilternumber,
+                  oilfilternumber,
+                  petrolfilternumber,
+                  untifreeznumber,
+                  hydraulicoilnumber
+                )
+              "
+            >
+              ثبت
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

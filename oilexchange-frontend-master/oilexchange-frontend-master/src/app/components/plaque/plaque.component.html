@@ -1,0 +1,107 @@
+<div class="container plaque-container">
+  <div class="row">
+    <div class="col-2 d-flex align-items-center justify-content-center">
+      <div>
+        <div class="pe-2"><p class="fs-3 text-center">ایران</p></div>
+        <div class="row">
+          <div style="padding-right: 20px" class="col-6 mb-2">
+            <input
+              id="width-input"
+              class="d-flex justify-content-center"
+              type="string"
+              maxlength="1"
+              placeholder="____"
+              [(ngModel)]="plaqueobject.seventhCharector"
+            />
+          </div>
+          <div class="col-6" style="padding: 0px">
+            <input
+              id="width-input"
+              class="d-flex justify-content-center"
+              type="string"
+              maxlength="1"
+              placeholder="____"
+              [(ngModel)]="plaqueobject.eighththCharector"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-2 d-flex align-items-center justify-content-center">
+      <div class="row">
+        <div class="col-4" style="padding: 0px">
+          <input
+            id="width-input"
+            class="d-flex justify-content-center"
+            type="string"
+            maxlength="1"
+            placeholder="____"
+            [(ngModel)]="plaqueobject.sixthCharector"
+          />
+        </div>
+        <div class="col-4" style="padding: 0px">
+          <input
+            id="width-input"
+            class="d-flex justify-content-center"
+            type="text"
+            maxlength="1"
+            placeholder="____"
+            [(ngModel)]="plaqueobject.fivthCharector"
+          />
+        </div>
+        <div class="col-4" style="padding: 0px">
+          <input
+            id="width-input"
+            class="d-flex justify-content-center"
+            type="text"
+            maxlength="1"
+            placeholder="____"
+            [(ngModel)]="plaqueobject.fourthCharector"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="col-3 d-flex align-items-center justify-content-center">
+      <div>
+        <select
+          (change)="selectAlphabetHandler($event)"
+          class="form-select"
+          aria-label="Default select example"
+        >
+          <option *ngFor="let alphabet of alphaBets">{{ alphabet }}</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-2 d-flex align-items-center justify-content-center">
+      <div class="row">
+        <div class="col-6" style="padding: 0px">
+          <input
+            id="width-input"
+            class="d-flex justify-content-center"
+            type="text"
+            maxlength="1"
+            placeholder="____"
+            [(ngModel)]="plaqueobject.secondCharector"
+          />
+        </div>
+        <div class="col-6" style="padding: 0px">
+          <input
+            id="width-input"
+            class="d-flex justify-content-center"
+            type="text"
+            maxlength="1"
+            placeholder="____"
+            [(ngModel)]="plaqueobject.firstCharector"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="col-3 d-flex align-items-center justify-content-center">
+      <div>
+        <button routerLink="historyplaque" class="row btn-history" (click)="onSearch()">
+          مشاهده سوابق
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

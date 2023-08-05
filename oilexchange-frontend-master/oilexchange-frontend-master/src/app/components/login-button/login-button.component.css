@@ -1,0 +1,24 @@
+.login-button{
+    border: solid 4px royalblue;
+    border-radius: 25px;
+    background-color: #fcd535;
+    width: 100%;
+    color: royalblue;
+    font-weight: bolder;
+}
+.login-button:hover{
+    background-color: royalblue;
+color: #fcd535;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-size: 26px;
+    margin: 0 0 51px;
+    letter-spacing: 15px;
+}

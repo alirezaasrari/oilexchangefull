@@ -1,0 +1,18 @@
+.card{
+    border-radius: 25px;
+    border: solid 4px royalblue;
+    background-color: #fef3c4;
+}
+
+.carrd{
+    border: solid 4px royalblue;
+    border-radius: 25px;
+    background-color: white;
+}
+
+#ServiceName {
+ font-size: small;
+ font-weight: bold;
+ white-space: nowrap;
+}
+

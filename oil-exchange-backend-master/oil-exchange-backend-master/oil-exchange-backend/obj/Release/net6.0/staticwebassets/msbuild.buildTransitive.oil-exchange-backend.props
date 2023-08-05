@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\oil-exchange-backend.props" />
+</Project>

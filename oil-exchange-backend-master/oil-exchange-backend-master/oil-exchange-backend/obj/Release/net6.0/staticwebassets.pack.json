@@ -1,0 +1,97 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\company-projects\\oil-exchange-project\\oil-exchange-backend-master\\oil-exchange-backend-master\\oil-exchange-backend\\wwwroot\\3rdpartylicenses.txt",
+      "PackagePath": "staticwebassets\\3rdpartylicenses.txt"
+    },
+    {
+      "Id": "D:\\company-projects\\oil-exchange-project\\oil-exchange-backend-master\\oil-exchange-backend-master\\oil-exchange-backend\\wwwroot\\assets\\carusel-image.jpg",
+      "PackagePath": "staticwebassets\\assets\\carusel-image.jpg"
+    },
+    {
+      "Id": "D:\\company-projects\\oil-exchange-project\\oil-exchange-backend-master\\oil-exchange-backend-master\\oil-exchange-backend\\wwwroot\\assets\\fonts\\IRANSansWebKE.WOFF",
+      "PackagePath": "staticwebassets\\assets\\fonts\\IRANSansWebKE.WOFF"
+    },
+    {
+      "Id": "D:\\company-projects\\oil-exchange-project\\oil-exchange-backend-master\\oil-exchange-backend-master\\oil-exchange-backend\\wwwroot\\assets\\fonts\\IRANSansWebKE.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\IRANSansWebKE.ttf"
+    },
+    {
+      "Id": "D:\\company-projects\\oil-exchange-project\\oil-exchange-backend-master\\oil-exchange-backend-master\\oil-exchange-backend\\wwwroot\\assets\\fonts\\IRANSansWebKE_Bold.WOFF",
+      "PackagePath": "staticwebassets\\assets\\fonts\\IRANSansWebKE_Bold.WOFF"
+    },
+    {
+      "Id": "D:\\company-projects\\oil-exchange-project\\oil-exchange-backend-master\\oil-exchange-backend-master\\oil-exchange-backend\\wwwroot\\assets\\fonts\\IRANSansWebKE_Bold.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\IRANSansWebKE_Bold.ttf"
+    },
+    {
+      "Id": "D:\\company-projects\\oil-exchange-project\\oil-exchange-backend-master\\oil-exchange-backend-master\\oil-exchange-backend\\wwwroot\\assets\\fonts\\IRANSansWebKE_Light.WOFF",
+      "PackagePath": "staticwebassets\\assets\\fonts\\IRANSansWebKE_Light.WOFF"
+    },
+    {
+      "Id": "D:\\company-projects\\oil-exchange-project\\oil-exchange-backend-master\\oil-exchange-backend-master\\oil-exchange-backend\\wwwroot\\assets\\fonts\\IRANSansWebKE_Light.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\IRANSansWebKE_Light.ttf"
+    },
+    {
+      "Id": "D:\\company-projects\\oil-exchange-project\\oil-exchange-backend-master\\oil-exchange-backend-master\\oil-exchange-backend\\wwwroot\\assets\\fonts\\IRANSansWebKE_Medium.WOFF",
+      "PackagePath": "staticwebassets\\assets\\fonts\\IRANSansWebKE_Medium.WOFF"
+    },
+    {
+      "Id": "D:\\company-projects\\oil-exchange-project\\oil-exchange-backend-master\\oil-exchange-backend-master\\oil-exchange-backend\\wwwroot\\assets\\fonts\\IRANSansWebKE_Medium.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\IRANSansWebKE_Medium.ttf"
+    },
+    {
+      "Id": "D:\\company-projects\\oil-exchange-project\\oil-exchange-backend-master\\oil-exchange-backend-master\\oil-exchange-backend\\wwwroot\\assets\\fonts\\IRANSansWebKE_UltraLight.WOFF",
+      "PackagePath": "staticwebassets\\assets\\fonts\\IRANSansWebKE_UltraLight.WOFF"
+    },
+    {
+      "Id": "D:\\company-projects\\oil-exchange-project\\oil-exchange-backend-master\\oil-exchange-backend-master\\oil-exchange-backend\\wwwroot\\assets\\fonts\\IRANSansWebKE_UltraLight.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\IRANSansWebKE_UltraLight.ttf"
+    },
+    {
+      "Id": "D:\\company-projects\\oil-exchange-project\\oil-exchange-backend-master\\oil-exchange-backend-master\\oil-exchange-backend\\wwwroot\\assets\\fonts\\digital-7.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\digital-7.ttf"
+    },
+    {
+      "Id": "D:\\company-projects\\oil-exchange-project\\oil-exchange-backend-master\\oil-exchange-backend-master\\oil-exchange-backend\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\company-projects\\oil-exchange-project\\oil-exchange-backend-master\\oil-exchange-backend-master\\oil-exchange-backend\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "D:\\company-projects\\oil-exchange-project\\oil-exchange-backend-master\\oil-exchange-backend-master\\oil-exchange-backend\\wwwroot\\main.1b5bcd50d2791233.js",
+      "PackagePath": "staticwebassets\\main.1b5bcd50d2791233.js"
+    },
+    {
+      "Id": "D:\\company-projects\\oil-exchange-project\\oil-exchange-backend-master\\oil-exchange-backend-master\\oil-exchange-backend\\wwwroot\\polyfills.51cd3434b87df8d4.js",
+      "PackagePath": "staticwebassets\\polyfills.51cd3434b87df8d4.js"
+    },
+    {
+      "Id": "D:\\company-projects\\oil-exchange-project\\oil-exchange-backend-master\\oil-exchange-backend-master\\oil-exchange-backend\\wwwroot\\runtime.1c71a17173ad5f2c.js",
+      "PackagePath": "staticwebassets\\runtime.1c71a17173ad5f2c.js"
+    },
+    {
+      "Id": "D:\\company-projects\\oil-exchange-project\\oil-exchange-backend-master\\oil-exchange-backend-master\\oil-exchange-backend\\wwwroot\\styles.5f33d7117033e1e6.css",
+      "PackagePath": "staticwebassets\\styles.5f33d7117033e1e6.css"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.build.oil-exchange-backend.props",
+      "PackagePath": "build\\oil-exchange-backend.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.oil-exchange-backend.props",
+      "PackagePath": "buildMultiTargeting\\oil-exchange-backend.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildTransitive.oil-exchange-backend.props",
+      "PackagePath": "buildTransitive\\oil-exchange-backend.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.oil-exchange-backend.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
